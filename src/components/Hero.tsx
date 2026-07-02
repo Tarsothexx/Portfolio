@@ -8,7 +8,7 @@ export default function Hero() {
   const { t } = useLanguage()
 
   return (
-    <section className="min-h-screen flex flex-col justify-center pt-32 relative max-w-[1180px] mx-auto px-8">
+    <section className="min-h-screen flex flex-col justify-center pt-32 pb-24 md:pb-0 relative max-w-[1180px] mx-auto px-8">
       <div className="grid md:grid-cols-[1fr_auto] gap-12 md:gap-16 items-center">
         <div>
           <div className="reveal in font-mono text-[.85rem] text-text-dim flex items-center gap-2.5 mb-7">
@@ -50,7 +50,7 @@ export default function Hero() {
         </div>
 
         <div className="reveal in flex justify-center md:justify-end" style={{ transitionDelay: '.1s' }}>
-          <div className="relative animate-float">
+          <div className="relative animate-float z-10">
             <div
               className="absolute inset-0 rounded-full blur-3xl opacity-40 scale-90"
               style={{ background: 'radial-gradient(circle, rgba(61,123,250,.55), transparent 70%)' }}
@@ -58,13 +58,13 @@ export default function Hero() {
             <img
               src={profileImg}
               alt="Tarcisio Vanderlei Evangelista"
-              className="relative w-[200px] h-[200px] sm:w-[240px] sm:h-[240px] md:w-[280px] md:h-[280px] object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,.55)]"
+              className="relative w-[160px] h-[160px] sm:w-[240px] sm:h-[240px] md:w-[280px] md:h-[280px] object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,.55)]"
             />
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 font-mono text-[.7rem] text-text-faint flex flex-col items-center gap-2.5">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 font-mono text-[.7rem] text-text-faint flex flex-col items-center gap-2.5 z-30">
         <span>{t.hero.scroll}</span>
         <span className="w-px h-9 bg-gradient-to-b from-cyan to-transparent animate-scroll-cue" />
       </div>
