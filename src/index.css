@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: theme('colors.void');
+  color: theme('colors.text');
+  font-family: theme('fontFamily.body');
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: theme('colors.blue');
+  color: #04060c;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: theme('colors.void');
+}
+::-webkit-scrollbar-thumb {
+  background: theme('colors.blue-deep');
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.blue');
+}
+
+/* ---------- background grid (needs a CSS mask, no Tailwind utility for this) ---------- */
+.bg-grid {
+  background-image:
+    linear-gradient(theme('colors.border') 1px, transparent 1px),
+    linear-gradient(90deg, theme('colors.border') 1px, transparent 1px);
+  background-size: 64px 64px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 90%);
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 90%);
+}
+
+/* ---------- reveal-on-scroll base state, toggled by the useReveal hook ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s theme('transitionTimingFunction.ease'), transform 0.8s theme('transitionTimingFunction.ease');
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- eyebrow label underline mark ---------- */
+.eyebrow::before {
+  content: '';
+  width: 22px;
+  height: 1px;
+  background: theme('colors.cyan');
+}
+
+/* ---------- nav link underline animation ---------- */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 1px;
+  background: theme('colors.cyan');
+  transition: width 0.3s theme('transitionTimingFunction.ease');
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* ---------- learning chip suffix ---------- */
+.chip-learning::after {
+  content: ' \00b7 aprendendo';
+  opacity: 0.7;
+}
+
+/* ---------- browser mockup 3D tilt, settles flat on card hover ---------- */
+.mock-window {
+  transform: perspective(900px) rotateX(4deg) rotateY(-6deg);
+  transition: transform 0.5s theme('transitionTimingFunction.ease');
+}
+.project-card:hover .mock-window {
+  transform: perspective(900px) rotateX(0deg) rotateY(0deg);
+}
+
+/* ---------- timeline vertical line + fill-on-scroll ---------- */
+.timeline-track::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background: theme('colors.border');
+}
+.timeline-track::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  width: 1px;
+  height: 0%;
+  background-image: theme('backgroundImage.grad-primary');
+  box-shadow: 0 0 12px rgba(61, 123, 250, 0.6);
+  transition: height 1.4s theme('transitionTimingFunction.ease');
+}
+.timeline-track.in::after {
+  height: 100%;
+}
+.t-item::before {
+  content: '';
+  position: absolute;
+  left: -40px;
+  top: 4px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: theme('colors.void');
+  border: 2px solid theme('colors.text-faint');
+  transition: border-color 0.5s ease, background 0.5s ease, box-shadow 0.5s ease;
+}
+.t-item.in::before {
+  border-color: theme('colors.cyan');
+  background: theme('colors.cyan');
+  box-shadow: 0 0 14px rgba(55, 205, 250, 0.8);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
