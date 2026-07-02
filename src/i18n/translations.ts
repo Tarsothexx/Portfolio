@@ -89,11 +89,11 @@ export const translations: Record<Language, Content> = {
       { id: 'contato', label: 'Contact' },
     ],
     hero: {
-      status: 'SYSTEM STATUS: ONLINE — OPEN TO NEW PROJECTS',
+      status: 'SYSTEM STATUS: ONLINE :: OPEN TO NEW PROJECTS',
       name: 'Tarcisio Vanderlei\nEvangelista',
       subtitle:
-        'Fullstack Developer with a degree in Systems Analysis and Development — experienced, curious, and always exploring new technologies, with a background in IT support.',
-      ctaPrimary: 'View projects →',
+        'Fullstack Developer with a degree in Systems Analysis and Development  experienced, curious, and always exploring new technologies, with a background in IT support.',
+      ctaPrimary: 'View projects',
       ctaSecondary: 'Get in touch',
       scroll: 'SCROLL',
     },
@@ -102,7 +102,7 @@ export const translations: Record<Language, Content> = {
       headingLine1: 'From support',
       headingLine2: 'to interface.',
       paragraph1:
-        'I have a degree in Systems Analysis and Development and I\'m passionate about technology. My path started with curiosity — wanting to understand how things work — and for a long time I\'ve been part of the IT support team (GTI) at Instituto Mauá de Tecnologia, which gave me a practical, close-up view of how systems behave in everyday use.',
+        'I have a degree in Systems Analysis and Development and I\'m passionate about technology. My path started with curiosity  wanting to understand how things work — and for a long time I\'ve been part of the IT support team (GTI) at Instituto Mauá de Tecnologia, which gave me a practical, close-up view of how systems behave in everyday use.',
       pullQuote:
         'I like building practical solutions, learning new tools, and taking on challenges that help me grow.',
       paragraph2:
@@ -161,7 +161,7 @@ export const translations: Record<Language, Content> = {
           tag: 'Extension Project IV · Live',
           title: 'LinguaQuest',
           description:
-            'A Japanese-learning web app I built for a language teacher, as a full academic extension project — from the formal report to the production deployment.',
+            'A Japanese-learning web app I built for a language teacher, as a full academic extension project  from the formal report to the production deployment.',
           stack: ['React', 'TypeScript', 'Vite', 'Firebase', 'Tailwind CSS', 'Claude API'],
           links: [
             { label: 'Visit site ↗', href: 'https://linguaquest-c77f9.web.app/' },
@@ -192,13 +192,13 @@ export const translations: Record<Language, Content> = {
       items: [
         {
           date: 'ONGOING',
-          title: 'IT Team (GTI) — Instituto Mauá de Tecnologia',
+          title: 'IT Team (GTI) Instituto Mauá de Tecnologia',
           description:
-            'IT support and software deployment — helping keep everyday systems running smoothly for the people who use them.',
+            'IT support and software deployment helping keep everyday systems running smoothly for the people who use them.',
         },
         {
           date: 'GRADUATED',
-          title: 'Systems Analysis and Development — Descomplica',
+          title: 'Systems Analysis and Development Descomplica',
           description: 'Degree focused on complete software projects, from database to interface.',
         },
         {
@@ -229,11 +229,11 @@ export const translations: Record<Language, Content> = {
       { id: 'contato', label: 'Contato' },
     ],
     hero: {
-      status: 'STATUS DO SISTEMA: ONLINE — DISPONÍVEL PARA NOVOS PROJETOS',
+      status: 'STATUS DO SISTEMA: ONLINE DISPONÍVEL PARA NOVOS PROJETOS',
       name: 'Tarcisio Vanderlei\nEvangelista',
       subtitle:
-        'Desenvolvedor Fullstack formado em Análise e Desenvolvimento de Sistemas — experiente, curioso e sempre explorando novas tecnologias, com background em suporte de TI.',
-      ctaPrimary: 'Ver projetos →',
+        'Desenvolvedor Fullstack formado em Análise e Desenvolvimento de Sistemas  experiente, curioso e sempre explorando novas tecnologias, com background em suporte de TI.',
+      ctaPrimary: 'Ver projetos',
       ctaSecondary: 'Falar comigo',
       scroll: 'ROLAR',
     },
@@ -332,13 +332,13 @@ export const translations: Record<Language, Content> = {
       items: [
         {
           date: 'EM ANDAMENTO',
-          title: 'Equipe de TI (GTI) — Instituto Mauá de Tecnologia',
+          title: 'Equipe de TI (GTI) Instituto Mauá de Tecnologia',
           description:
-            'Suporte de TI e implantação de software — ajudando a manter os sistemas do dia a dia funcionando bem para quem usa.',
+            'Suporte de TI e implantação de software ajudando a manter os sistemas do dia a dia funcionando bem para quem usa.',
         },
         {
           date: 'FORMADO',
-          title: 'Análise e Desenvolvimento de Sistemas — Descomplica',
+          title: 'Análise e Desenvolvimento de Sistemas Descomplica',
           description: 'Formação com foco em projetos completos de software, do banco de dados à interface.',
         },
         {
