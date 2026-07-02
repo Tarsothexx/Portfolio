@@ -74,8 +74,7 @@ export type Content = {
 
 export const socials = {
   github: 'https://github.com/Tarsothexx',
-  // TODO: paste your clean LinkedIn profile URL here (the one you sent came through
-  // as a truncated Microsoft Teams share link, not the direct LinkedIn URL).
+
   linkedin: 'https://www.linkedin.com/in/tarc%C3%ADsio-vanderlei-657427287/',
 }
 
@@ -102,11 +101,11 @@ export const translations: Record<Language, Content> = {
       headingLine1: 'From support',
       headingLine2: 'to interface.',
       paragraph1:
-        'I have a degree in Systems Analysis and Development and I\'m passionate about technology. My path started with curiosity  wanting to understand how things work — and for a long time I\'ve been part of the IT support team (GTI) at Instituto Mauá de Tecnologia, which gave me a practical, close-up view of how systems behave in everyday use.',
+        'I have a degree in Systems Analysis and Development and I\'m passionate about technology. My path started with curiosity  wanting to understand how things work  and for a long time I\'ve been part of the IT support team (GTI) at Instituto Mauá de Tecnologia, which gave me a practical, close-up view of how systems behave in everyday use.',
       pullQuote:
         'I like building practical solutions, learning new tools, and taking on challenges that help me grow.',
       paragraph2:
-        'Today I build with JavaScript, TypeScript, React, and Tailwind CSS, and I\'m studying Elixir on my own. I\'m in constant progress — looking for opportunities to gain experience, sharpen my skills, and contribute to projects that make a difference.',
+        'Today I build with JavaScript, TypeScript, React, and Tailwind CSS, and I\'m studying Elixir on my own. I\'m in constant progress  looking for opportunities to gain experience, sharpen my skills, and contribute to projects that make a difference.',
     },
     skills: {
       eyebrow: 'Stack',
@@ -175,7 +174,7 @@ export const translations: Record<Language, Content> = {
           tag: 'Earlier project',
           title: 'PetSatisfeito',
           description:
-            'One of the first complete projects I built on my own, focused on the pet care industry — part of the process that helped me consolidate my web development foundation before LinguaQuest.',
+            'One of the first complete projects I built on my own, focused on the pet care industry  part of the process that helped me consolidate my web development foundation before LinguaQuest.',
           stack: ['JavaScript', 'HTML/CSS'],
           decoration: '🐾',
         },
@@ -205,7 +204,7 @@ export const translations: Record<Language, Content> = {
           date: 'EXTENSION PROJECT IV',
           title: 'LinguaQuest',
           description:
-            'Planning, developing, and shipping a Japanese-learning web app — including a formal academic report and full documentation.',
+            'Planning, developing, and shipping a Japanese-learning web app  including a formal academic report and full documentation.',
         },
       ],
     },
@@ -232,7 +231,7 @@ export const translations: Record<Language, Content> = {
       status: 'STATUS DO SISTEMA: ONLINE DISPONÍVEL PARA NOVOS PROJETOS',
       name: 'Tarcisio Vanderlei\nEvangelista',
       subtitle:
-        'Desenvolvedor Fullstack formado em Análise e Desenvolvimento de Sistemas  experiente, curioso e sempre explorando novas tecnologias, com background em suporte de TI.',
+        'Desenvolvedor Fullstack formado em Análise e Desenvolvimento de Sistemas experiente, curioso e sempre explorando novas tecnologias, com background em suporte de TI.',
       ctaPrimary: 'Ver projetos',
       ctaSecondary: 'Falar comigo',
       scroll: 'ROLAR',
@@ -242,11 +241,11 @@ export const translations: Record<Language, Content> = {
       headingLine1: 'Do suporte',
       headingLine2: 'para a interface.',
       paragraph1:
-        'Sou formado em Análise e Desenvolvimento de Sistemas e apaixonado por tecnologia. Minha trajetória começou pela curiosidade — a vontade de entender como as coisas funcionam — e há bastante tempo faço parte da equipe de suporte de TI (GTI) do Instituto Mauá de Tecnologia, o que me deu uma visão prática de como sistemas se comportam no dia a dia de quem usa.',
+        'Sou formado em Análise e Desenvolvimento de Sistemas e apaixonado por tecnologia. Minha trajetória começou pela curiosidade  a vontade de entender como as coisas funcionam  e há bastante tempo faço parte da equipe de suporte de TI (GTI) do Instituto Mauá de Tecnologia, o que me deu uma visão prática de como sistemas se comportam no dia a dia de quem usa.',
       pullQuote:
         'Gosto de criar soluções práticas, aprender novas ferramentas e encarar desafios que me ajudam a crescer.',
       paragraph2:
-        'Hoje desenvolvo com JavaScript, TypeScript, React e Tailwind CSS, além de estudar Elixir por conta própria. Estou em construção constante — buscando experiência, aprimorando habilidades e contribuindo com projetos que façam diferença.',
+        'Hoje desenvolvo com JavaScript, TypeScript, React e Tailwind CSS, além de estudar Elixir por conta própria. Estou em construção constante  buscando experiência, aprimorando habilidades e contribuindo com projetos que façam diferença.',
     },
     skills: {
       eyebrow: 'Stack',
@@ -301,7 +300,7 @@ export const translations: Record<Language, Content> = {
           tag: 'Projeto de Extensão IV · Em produção',
           title: 'LinguaQuest',
           description:
-            'Aplicativo web de ensino de japonês desenvolvido para uma professora de idiomas, como projeto de extensão acadêmica completo — do relatório formal à entrega em produção.',
+            'Aplicativo web de ensino de japonês desenvolvido para uma professora de idiomas, como projeto de extensão acadêmica completo  do relatório formal à entrega em produção.',
           stack: ['React', 'TypeScript', 'Vite', 'Firebase', 'Tailwind CSS', 'Claude API'],
           links: [
             { label: 'Ver site ↗', href: 'https://linguaquest-c77f9.web.app/' },
@@ -315,7 +314,7 @@ export const translations: Record<Language, Content> = {
           tag: 'Projeto anterior',
           title: 'PetSatisfeito',
           description:
-            'Um dos primeiros projetos completos que desenvolvi, voltado ao setor pet — parte do processo que consolidou minha base em desenvolvimento web antes do LinguaQuest.',
+            'Um dos primeiros projetos completos que desenvolvi, voltado ao setor pet  parte do processo que consolidou minha base em desenvolvimento web antes do LinguaQuest.',
           stack: ['JavaScript', 'HTML/CSS'],
           decoration: '🐾',
         },
@@ -345,7 +344,7 @@ export const translations: Record<Language, Content> = {
           date: 'PROJETO DE EXTENSÃO IV',
           title: 'LinguaQuest',
           description:
-            'Planejamento, desenvolvimento e entrega de um app web de ensino de japonês — incluindo relatório acadêmico formal e documentação completa.',
+            'Planejamento, desenvolvimento e entrega de um app web de ensino de japonês            git status incluindo relatório acadêmico formal e documentação completa.',
         },
       ],
     },
